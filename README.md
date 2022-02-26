@@ -1,11 +1,11 @@
 
-  # README Generator
+  # Work Day Scheduler
   
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
    
-  A node application to quickly create professional README's!
+  A simple site to keep track of your day!
 
   
   ## Table of Contents
@@ -19,15 +19,15 @@
   
   ## Installation
 
-  Once you have cloned the code from the GitHub repo, you will need to run npm install from the develop directiory before you can run this program with Node.
+  Simply visit the live site!
 
   ## Usage
 
-   How to use this app https://watch.screencastify.com/v/76Mws3Vwe6NIFVNU975D
+  
 
   ## Credits
 
-  none
+  no
 
  
   
@@ -37,7 +37,7 @@
   This application has the following Licensing:
 
   
-  https://opensource.org/licenses/MIT
+    https://opensource.org/licenses/MIT
 
   
 
@@ -179,12 +179,13 @@ For answers to common questions about this code of conduct, see the FAQ at
 
  ## Tests
 
- none
+ no
 
  ## Questions
 
  GitHub: https://github.com/CBranagan
- 
+
  Email: Please email me at chad.branagan@gmail.com with any questions regarding this application.
 
+  
   
