@@ -23,14 +23,8 @@
 
   ## Usage
 
-  
+  https://cbranagan.github.io/work-day-scheduler/
 
-  ## Credits
-
-  no
-
- 
-  
     
   ## Licenses
 
@@ -177,9 +171,6 @@ For answers to common questions about this code of conduct, see the FAQ at
 [FAQ]: https://www.contributor-covenant.org/faq
 [translations]: https://www.contributor-covenant.org/translations
 
- ## Tests
-
- no
 
  ## Questions
 
