@@ -1,30 +1,58 @@
+$(document).ready(function () {
+  var hours9 = localStorage.getItem("hour-9");
+  $("#hours-9").val(hours9);
 
+  var hours10 = localStorage.getItem("hour-10");
+  $("#hours-10").val(hours9);
 
-//the current date is displayed above the hour blocks
-var currentDate = moment().format("ddd, MMMM Do");
-$("#currentDay").text(currentDate)
+  var hours11 = localStorage.getItem("hour-11");
+  $("#hours-11").val(hours11);
 
-//when I click on an hour block I can enter text
-$(".task-table").on("click", "div", function(event) {
-    console.log(event)
-    var taskInput = $("<input>")
-    .addClass("form-control")
-    .text()
+  var hours12 = localStorage.getItem("hour-12");
+  $("#hours-12").val(hours12);
 
-    EventTarget.append(taskInput)
-})
-//when I click the save button the text is saved into the hour block and updated to local storage
+  var hours13 = localStorage.getItem("hour-13");
+  $("#hours-13").val(hours13);
 
-//if the hour block is in the past it should be grey, present red, future green
+  var hours14 = localStorage.getItem("hour-14");
+  $("#hours-14").val(hours14);
 
+  var hours15 = localStorage.getItem("hour-15");
+  $("#hours-15").val(hours15);
 
-//function to turn div into text area to enter task
+  var hours16 = localStorage.getItem("hour-16");
+  $("#hours-16").val(hours16);
 
+  var hours17 = localStorage.getItem("hour-17");
+  $("#hours-17").val(hours17);
+  //save buttons
+  $(".saveBtn").on("click", function () {
+    //gets values
+    var textSpace = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
 
+    localStorage.setItem(time, textSpace);
+  });
 
-//set a time to each hour block by adding a data set of time that adds 1 hour per block
-//moment().hour(Number)
+  //var currentDay = $("#currentDay");
+  $("#currentDay").text(moment().format("MMMM Do YYYY"));
 
+  function hours() {
+    //gets hours
+    currentHour = moment().format("HH");
+    var hourIndex = currentHour - 9;
+    $(".time-block").each(function (timeBox) {
+      if (timeBox < hourIndex) {
+        $(this).addClass("past").removeClass("present").removeClass("future");
+      }
+      if (timeBox === hourIndex) {
+        $(this).addClass("present").removeClass("past").removeClass("future");
+      }
+      if (timeBox > hourIndex) {
+        $(this).addClass("future").removeClass("present").removeClass("past");
+      }
+    });
+  }
 
-
-//audit function to see if the hour block is past, present, or future and change the background color accordingly
+  setInterval(hours, 1000);
+});
